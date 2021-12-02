@@ -130,8 +130,16 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'nombre' => [
+            'required' => 'Debe completar el nombre',
+            'string' => 'El nombre acepta solo texto',
+            'max:150' => 'El nombre debe tener menos de 150 letras',
+        ],
+
+        'email' => [
+            'required' => 'Debe completar el email',
+            'email' => 'Agregue un email valido',
+            'max:150' => 'El email debe tener menos de 150 letras',
         ],
     ],
 
